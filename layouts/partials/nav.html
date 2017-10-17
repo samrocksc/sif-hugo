@@ -1,0 +1,16 @@
+<nav class="navBar">
+  <nav class="wrapper">
+    <div class="logo"></div><!-- Logo -->
+    <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="label-toggle"></label>
+    <ul>
+      {{ range sort .Site.Menus.main }}
+      <li><a href="{{ .URL }}">{{ .Name | lower }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</nav>
+<header class="content-wrapper">
+  <h1>Big ol' Lorem</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, sint corporis dolores omnis consectetur quaerat nesciunt beatae maiores, itaque labore ex vero pariatur nulla non fugiat, facilis eaque sunt doloremque!</p>
+</header>
